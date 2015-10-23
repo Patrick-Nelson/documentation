@@ -1,9 +1,9 @@
 ---
-title: How Drush Works on Pantheon
-description: Learn how to create a policy file and sitealias alter hook.
+title: Altering Drush Behavior with a Policy File
+description: Learn how to use hook implementations within a policy file to modify the default behavior or version of Drush.
 keywords: Drupal drush, command line, drupal, terminus drush, cli
 ---
-One thing that makes Drush site aliases so powerful is the fact that they are defined in regular PHP executable files.  This gives you many options, as the alias definitions can easily be adjusted in code, factoring out common sections, or making other adjustments directly in the alias file.  
+One thing that makes Drush site aliases so powerful is the fact that they are defined in regular PHP executable files.  This gives you many options, as the alias definitions can easily be adjusted in code, factoring out common sections, or making other adjustments directly in the alias file. There are a number of reasons why one might want to separate this code from the alias data: 
 
 * Pantheon automatically generates Drush site alias files for every site available to you. It is preferable to not edit the generated file, so that the local can be easily updated with a pristine copy any time the set of available sites changes.
 
