@@ -37,7 +37,7 @@ Commit the policy file to your site's repository and check Drush version:
 $ drush @pantheon.SITENAME.ENV version
 drush version 5.10.1
 ```
-Following the pattern of this example `alter` hook, you can make any adjustments needed to your alias files on the fly.  If you are currently embedding code inside the alias file directly, we highly recommend converting it into a policy file to prepare for the shift to YML in 8.x.
+Following the pattern of this example `alter` hook, you can make any adjustments needed to your alias files on the fly.  
 
 ## See Also
 - [Fix Up Drush Site Aliases with a Policy File (Blog)](https://pantheon.io/blog/fix-drush-site-aliases-policy-file)
