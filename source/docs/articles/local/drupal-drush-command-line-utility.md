@@ -17,8 +17,11 @@ All of the commands below can be run from Terminus instead of using Drush aliase
 
 ## Drush Versions
 For details on managing remote and local Drush versions, see [Managing Drush Versions on Pantheon](/docs/articles/local/drush-versions).
+
 ## Install Drush Aliases Locally
-Adding Pantheon aliases to your local Drush aliases file will allow you to run Drush calls against your Pantheon site environments. There are two methods for obtaining the aliases:
+Adding Pantheon aliases to your local Drush aliases file will allow you to run Drush calls against your Pantheon site environments. You don't need to download the Drush aliases file if you're using Terminus to invoke Drush.
+
+There are two methods for obtaining the aliases:
 
 ### Download with Terminus, the Pantheon CLI
 Once authenticated to Pantheon with `$ terminus auth login`, update your local aliases file.
@@ -34,7 +37,7 @@ To get started, go to your Pantheon Dashboard and click **Download all Drush ali
 
 ###Install the Pantheon Drush Aliases
 
-If you are on Linux/MacOS environment, put the generated pantheon.aliases.drushrc.php in either the `.drush` directory in your home, or the `aliases` directory of your local Drush installation.
+If you are on Linux/MacOS environment, put the generated pantheon.aliases.drushrc.php in either the `.drush` directory in your home, or the `aliases` directory of your local Drush installation. 
 
 Drush will search for aliases in any of these files using the alias search path. The following locations are examined for alias files:
 
