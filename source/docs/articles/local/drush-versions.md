@@ -40,6 +40,7 @@ drush version 5.10.1
 Following the pattern of this example `alter` hook, you can make any adjustments needed to your alias files on the fly.  
 
 ## See Also
+- [Avoiding “Dependency Hell” with Site-Local Drush (Blog)](https://pantheon.io/blog/avoiding-dependency-hell-site-local-drush)
 - [Fix Up Drush Site Aliases with a Policy File (Blog)](https://pantheon.io/blog/fix-drush-site-aliases-policy-file)
 - [Expand Your Use of Drush on Pantheon with More Commands (Blog)](https://pantheon.io/blog/expand-use-drush-pantheon-more-commands)  
 - [Drupal Drush Command-Line Utility](/docs/articles/local/drupal-drush-command-line-utility/)
