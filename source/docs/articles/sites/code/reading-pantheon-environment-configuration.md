@@ -41,10 +41,11 @@ Database credentials, Redis authentication, and other configuration data is prov
 
 If you are using a common CMS framework, the code you need to load this configuration and boot your app should already be pre-configured. However, if you need to do something custom, you can work with environmental configuration directly.
 
-For debugging Drupal modules and plugins, and for some custom coding, you may need to know the values available in the `$_SERVER` variable.  While we do ***not*** encourage the use of the `$_SERVER` variable, except in certain instances like for redirects, if a module/plugin is not behaving as expected, reviewing this output versus the value the module/plugin may be using is a good place to start.  Use `$_ENV` whenever possible.
+For debugging Drupal modules and plugins and for some custom coding, you may need to know the values available in the `$_SERVER` variable.  We do not encourage the use of the `$_SERVER` variable except in certain instances, e.g. redirects. If a module or plugin is not behaving as expected, reviewing this output versus the value the module/plugin is using may be beneficial. Use `$_ENV` whenever possible.
 
-NOTE:
-The `$_SERVER` variable contains sensitive data about a site.  It should ***not*** be overly exposed.  In the same way that you would not leave the output of `phpinfo();` displayed on a site, don't leave this open to public viewing.
+<div class="alert alert-info" role="alert">
+<h4>Note</h4>
+The `$_SERVER` variable contains sensitive data about a site and should not be publicly exposed. In the same way that you would not leave the output of `phpinfo();` displayed on a site, don't leave this open to public viewing. </div>
 
 
 This is an example from a Wordpress site homepage:
